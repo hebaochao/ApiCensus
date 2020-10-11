@@ -13,8 +13,15 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /***
- * 统计接口调用次数，调用上限限制
- * 协定处理器的bean 名称为全小写
+
+ */
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO api请求处理实现类
+ *  * 统计接口调用次数，调用上限限制
+ *  * 协定处理器的bean 名称为全小写
+ * @date : 2020/10/11 23:16
  */
 @Component("apimhcounthandler")
 @Slf4j

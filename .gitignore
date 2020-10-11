@@ -19,3 +19,5 @@ hs_err_pid*
 demo/target/
 
 /api-census.iml
+*.iml
+common-api-census/target/

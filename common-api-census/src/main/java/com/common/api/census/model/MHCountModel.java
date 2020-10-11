@@ -7,8 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 
-/****
- * handler 统计模型
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO  handler 统计模型
+ * @date : 2020/10/11 23:16
  */
 @AllArgsConstructor
 @NoArgsConstructor

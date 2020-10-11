@@ -22,6 +22,12 @@ import java.lang.annotation.*;
  *
  */
 
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO api请求监听注解
+ * @date : 2020/10/11 23:16
+ */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

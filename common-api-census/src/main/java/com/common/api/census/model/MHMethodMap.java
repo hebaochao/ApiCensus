@@ -5,6 +5,13 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO  handler 方法集合模型
+ * @date : 2020/10/11 23:16
+ */
 public class MHMethodMap<T> implements Serializable {
 
   private Map<String, T> methodsMap = new HashMap<String, T>();

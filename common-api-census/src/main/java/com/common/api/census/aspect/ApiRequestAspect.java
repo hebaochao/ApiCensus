@@ -14,6 +14,12 @@ import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO api请求处理切面
+ * @date : 2020/10/11 23:16
+ */
 @Aspect
 @Slf4j
 @Component

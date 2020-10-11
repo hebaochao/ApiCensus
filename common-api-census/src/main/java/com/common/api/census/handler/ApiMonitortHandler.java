@@ -3,7 +3,12 @@ package com.common.api.census.handler;
 import java.io.Serializable;
 import java.lang.reflect.Method;
 import java.util.Map;
-
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO api请求处理
+ * @date : 2020/10/11 23:16
+ */
 public interface ApiMonitortHandler {
 
 

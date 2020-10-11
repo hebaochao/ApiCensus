@@ -14,6 +14,12 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO 封装切点处理模型
+ * @date : 2020/10/11 23:16
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

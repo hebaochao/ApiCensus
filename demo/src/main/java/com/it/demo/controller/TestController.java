@@ -8,24 +8,29 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+/**
+ * @author : baochaohe
+ * @version : v1.0
+ * @description TODO 测试控制器
+ * @date : 2020/10/11 23:16
+ */
 @RestController
 @RequestMapping("/test")
 public class TestController {
 
-  @Autowired
-  private TestService testService;
+    @Autowired
+    private TestService testService;
 
 
-  @GetMapping("/countCall/{name}")
-  public MonitorRequestResult countCall(@PathVariable("name") String name){
-    return this.testService.testCall(name);
-  }
+    @GetMapping("/countCall/{name}")
+    public MonitorRequestResult countCall(@PathVariable("name") String name) {
+        return this.testService.testCall(name);
+    }
 
-  @GetMapping("/countAge/{age}")
-  public MonitorRequestResult testVoidcountCallNumber(@PathVariable("age") Integer age){
-    return this.testService.testVoidcountCallNumber(age);
-  }
+    @GetMapping("/countAge/{age}")
+    public MonitorRequestResult testVoidcountCallNumber(@PathVariable("age") Integer age) {
+        return this.testService.testVoidcountCallNumber(age);
+    }
 
 
 }
