@@ -16,7 +16,6 @@ public interface ApiMonitortHandler {
    * @return   true 执行，false 中断 进入默认错误结果返回
    */
   public  boolean  checkApi(Method method, Map<String, Object> params, int type, boolean isPersist);
-
   /***
    * 定义处理错误/超出限制/其他默认错误消息
    * @param method
@@ -27,5 +26,4 @@ public interface ApiMonitortHandler {
    * @return
    */
   public Serializable returnFailResult(Method method, Map<String, Object> params, boolean result, int type, boolean isPersist);
-
 }

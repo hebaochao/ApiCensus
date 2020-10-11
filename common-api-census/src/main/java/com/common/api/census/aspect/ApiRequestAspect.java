@@ -47,7 +47,7 @@ public class ApiRequestAspect {
   private ApiMonitortHandler createApiMonitortHandler(ApiRequestMonitor myAnnotation) {
     ApiMonitortHandler apiMonitortHandler = null;
     try {
-      apiMonitortHandler = this.applicationContext.getBean(myAnnotation.handler());
+      apiMonitortHandler = this.applicationContext.getBean(myAnnotation.handler().getSimpleName().toLowerCase(),myAnnotation.handler());
     } catch (Exception e) {
       e.printStackTrace();
     }

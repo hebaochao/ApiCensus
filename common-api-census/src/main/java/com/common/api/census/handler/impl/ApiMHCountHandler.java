@@ -5,6 +5,7 @@ import com.common.api.census.handler.ApiMonitortHandler;
 import com.common.api.census.model.MHCountModel;
 import com.common.api.census.model.MHMethodMap;
 import com.common.api.census.model.MonitorRequestResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -13,8 +14,10 @@ import java.util.Map;
 
 /***
  * 统计接口调用次数，调用上限限制
+ * 协定处理器的bean 名称为全小写
  */
-@Component
+@Component("apimhcounthandler")
+@Slf4j
 public class ApiMHCountHandler implements ApiMonitortHandler {
 
   /***
@@ -33,6 +36,7 @@ public class ApiMHCountHandler implements ApiMonitortHandler {
     MHCountModel countModel = this.getMHCountModel(method,type);
     boolean result = countModel.autoAddOne();//统计+1
     this.mehMethodMap.updateObj(method, type, countModel);//更新集合
+    log.info("api count :"+countModel.toString());
     return result;
   }
 
